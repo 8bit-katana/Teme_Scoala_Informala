@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="241243" name="Octavian Catană" >
+<node_order><![CDATA[23]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="241255" name="Functional Testing" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="241261" name="Smoke Testing Suite: Log-In Main Functions" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241263" name="Log-in with incomplete data">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[992]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps</p>
+
+<p>1: Go to facebook.com/login</p>
+
+<p>2: Introduce correct mail adress&nbsp;</p>
+
+<p>3: Introduce incomplete password</p>
+
+<p>Expected result: Account icon will be displayed along with &quot;Wrong password message&quot; and other options to&nbsp;log-in</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241268" name="Log-in with non-existent data">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[994]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to facebook.com/login</p>
+
+<p>2. Fill address and password boxes with random, inexisting data</p>
+
+<p>3. Try to log-in</p>
+
+<p>Expected result: Receive message &quot;Email introduced is incorrect&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241271" name="Log-in with correct data (No 2-steps verification)">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[995]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to facebook.com/login</p>
+
+<p>2. Fill log-in boxes with correct data</p>
+
+<p>3. Log-in</p>
+
+<p>Expected result: You will enter your account unless you have 2-steps verification activated</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241282" name="Test browser &quot;Go back&quot; button after a succesful log-in">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[997]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Succesfully log-in on Facebook</p>
+
+<p>2. In the browser menu, click &quot;Page back&quot;</p>
+
+<p>Expected result: You will be redirected to Facebook Log-in page</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241295" name="Integration Testing Suite: Main Homepage" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241302" name="Test if .gif comments display successfully">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1001]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Upload a .gif document in the comment section on a post in your News Feed</p>
+
+<p>Expected result: The .gif file will be displayed correctly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241310" name="Test if specific comments are displayed if sorted by most relevant">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1003]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to the Comments section in a post on your News feed</p>
+
+<p>2 . Sort by most relevant</p>
+
+<p>Expected results: Most relevant comments will be displayed</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241316" name="Test if specific comments are displayed if sorted by Newest">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1005]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to the Comments section in a post on your News feed</p>
+
+<p>2 . Sort by Newest</p>
+
+<p>Expected results: Newest comments will be displayed</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241320" name="Test if specific comments are displayed if sorted by All">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1006]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to the Comments section in a post on your News feed</p>
+
+<p>2 . Sort by All</p>
+
+<p>Expected results: All comments will be displayed</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241324" name="Test for notification after commenting on a post and receiving an answer">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1007]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Comment on a post that requires an answer</p>
+
+<p>2. Check for notification after receiving an answer</p>
+
+<p>Expected results: Notification will pop-up</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241337" name="Integration Testing Suite: Friends List" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241338" name="Test what happens if you remove deactivated accounts from Friends List">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1010]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Go to friends list</p>
+
+<p>2. Remove a Deactivated Account from Friends List</p>
+
+<p>Expected result: Safety message will pop-up&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241342" name="Test if you still have a friend in list after removing him">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1011]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Remove a friend from list</p>
+
+<p>2. Check if you still have that friend in list</p>
+
+<p>Expected results: Friend will disappear from list</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241344" name="Test if friends list count is updated accordingly after deleting an exact number of friends">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1012]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Remove 5 friends from Friends List</p>
+
+<p>2. Check if Friends Count&nbsp;has updated</p>
+
+<p>Expected results: The count will update precisely</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241351" name="Test if all people having the same name appear in your friends list when you search for a specific n">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1014]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Write a single word&nbsp;name which plenty&nbsp;friends in your list have in their displayed names</p>
+
+<p>Expected results: All friends bearing that name will be displayed</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241380" name="Test if you see on news feed posts from a friends marked Favorite &amp; get a notification">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1022]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Mark a friend as favourite</p>
+
+<p>2. Verify if you received a notification he posted</p>
+
+<p>3. Verify if his post displays on News Feed</p>
+
+<p>Expected results: You will receive notification &amp; you will also see your friend&#39;s post on news feed</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241389" name="Smoke Testing Suite: Search Bar" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241393" name="Test if search history is updated after last search">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1025]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Search something in search bar</p>
+
+<p>2. Refresh page</p>
+
+<p>3. Check if search history is updated after last search</p>
+
+<p>Expected result: Search history is updated</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241397" name="Test if search history still appears after deleting it">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1027]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>Click Search Bar</p>
+
+<p>Click Edit</p>
+
+<p>Click &quot;Clear searches&quot;</p>
+
+<p>Refresh</p>
+
+<p>Click Search Bar again</p>
+
+<p>Expected result: Nothing to show</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241400" name="Test if relevant suggestions are displayed after searching by keywords">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1028]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Search a relevant topic by keywords. Example: Cinematography&nbsp;</p>
+
+<p>Expected results: Relevant searches are displayed</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241402" name="Test if Facebook functions or sections are displayed when writing their names in the search bar">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1029]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>Search for &quot;Settings&quot; in Search Bar</p>
+
+<p>Expected Results: Settings Menul will be displayed</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241406" name="Test if relevant people are displayed after keywords">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1031]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:&nbsp;</p>
+
+<p>1. Search by relevant&nbsp;keywords - name, city, studies</p>
+
+<p>2. Check if displayed searches are relevant</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241416" name="Smoke Testing Suite: Chat" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241418" name="See if the call function in messenger works when you receive a call">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1035]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Receive a call on Facebook web application</p>
+
+<p>2. Answer</p>
+
+<p>Expected results: Call works</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241420" name="See if the call function in messenger works when you start a call">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1036]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Initiate a call on Facebook web application</p>
+
+<p>2. Wait for answer</p>
+
+<p>Expected results: Call works</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241425" name="See if the &quot;call in progress&quot; status remains after the call ends">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1038]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. End a call</p>
+
+<p>2. Check if &quot;call in progress&quot; status remains in chat menu</p>
+
+<p>Expected results: Call in progress status dissappears</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241427" name="See if you receive a notification in the message bar of the web application when you receive a new m">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1039]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Receive a message on Facebook web application</p>
+
+<p>2. Check for message notifications</p>
+
+<p>Expected results: Message notification will appear</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241432" name="Test how the web application reacts when you receive many spam messages">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1041]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Receive spam messages using a spammer application</p>
+
+<p>Expected results: You won&#39;t receive more than 30 messages before the spamming account is blocked</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241437" name="See if you can search for messages in the conversation">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[1043]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to a loaded conversation</p>
+
+<p>2. Click on user name</p>
+
+<p>3. Click Open in&nbsp;Messenger</p>
+
+<p>4.&nbsp;Search a keyword</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241448" name="Test if scrolling too much will affect scrolling function">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[1047]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Scroll in a long conversation</p>
+
+<p>2. Check what happens while older messages are loading</p>
+
+<p>Expected results: Scrolling should not be affected&nbsp; negatively by loading older messages</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241451" name="Test if you can post a 500 words message">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[1048]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps</p>
+
+<p>1. Send a 500 words long message&nbsp;</p>
+
+<p>Expected results: Message will be sent</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241455" name="Test if you can post a 1000 words long message">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[1050]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps</p>
+
+<p>1. Send a 1000 words long message&nbsp;</p>
+
+<p>Expected results: Message will be sent</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241460" name="Test if you can post a 5000 words message">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[1052]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps</p>
+
+<p>1. Send a 5000 words long message&nbsp;</p>
+
+<p>Expected results: Message will be sent</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241463" name="Test if you can look through pictures reel after clicking a picture">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[1053]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to a chat</p>
+
+<p>2. Click on a picture</p>
+
+<p>3. Use arrows to scroll through pictures</p>
+
+<p>Expected results: Loading won&#39;t affect scrolling negatively&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241465" name="Test if you can look through sent pictures in Media menu from chat options">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[1054]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to a conversation chat</p>
+
+<p>2. Go to Informations</p>
+
+<p>3. Go to Media, files and links</p>
+
+<p>4, Click Media</p>
+
+<p>5. Scroll down</p>
+
+<p>Expected results: Loading older images won&#39;t affect the scrolling negatively&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241469" name="Test if searching in chat by keyword will index more than 100-150 keyword entries">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[1056]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to a conversation where you have used a word more than 150 times</p>
+
+<p>2. Search for that word by keywords</p>
+
+<p>Expected results: All keywords will be displayed, even if there are more than 150 entries of that keyword</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241473" name="Test if you can still search keywords after unarchiving an archived conversation">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[1058]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Archive a conversation</p>
+
+<p>2. Unarchive that conversation&nbsp;</p>
+
+<p>3. Search in conversation by keywords</p>
+
+<p>Expected results: Searching feature won&#39;t be affected</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241475" name="Smoke Testing Suite: Notifications" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241476" name="Test if you receive notifications when someone reacts to your post">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1059]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Have another account react on one random post of yours</p>
+
+<p>Expected results: Notification pop-up</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241478" name="Test if you receive notifications when someone comments on one of your posts">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1060]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Have another account comment on one random post of yours</p>
+
+<p>Expected results: Notification pop-up</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241480" name="Test if you receive notifications when someone replies to your comment when you post somewhere">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1061]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Have another account reply on one random comment&nbsp;of yours</p>
+
+<p>Expected results: Notification pop-up</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241483" name="Test if you receive notifications when someone shares your posts">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1062]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Have another account share one random post of yours</p>
+
+<p>Expected results: Notification pop-up</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241485" name="Smoke Testing Suite: Contacts List" >
+<node_order><![CDATA[7]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241487" name="Test the search function to find a contact from the active ones">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1063]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>In the right Contacts List bar click search button</p>
+
+<p>Search an active account by name</p>
+
+<p>Expected result: Specifc account will display according to&nbsp;name searched</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241495" name="Test if the sound works for incoming calls after you have deactivated the function">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1066]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. In the Active&nbsp;Contacts List go to Settings and turn off incoming calls sound</p>
+
+<p>Expected results: You will not hear a sound when receiving a call</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241500" name="Test if the sound works on messages after you have deactivated the function">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1068]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps.</p>
+
+<p>1. in Active Contacts list click settings and activate sound for new messages</p>
+
+<p>Expected results: Audible sound when a new message is received</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241503" name="Test if new messages are still opened after deactivating the function">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1069]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. In Active Contacts List go to settings and deactivate &quot;Pop Up new messages&quot;</p>
+
+<p>Expected result: New messages won&#39;t pop up</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241508" name="Test if status still active after setting the visibility to hidden">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1071]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>In Active Contacts settings set Active Status to OFF</p>
+
+<p>Expected Results: Active status will be hidden from everybody unless selecting exceptions</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241512" name="Smoke Testing Suite: My Profile Timeline and Posts" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241513" name="Test if you can post a status">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1073]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps</p>
+
+<p>1. Post a status on your timeline</p>
+
+<p>Expected results: Status is posted succesfully</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241516" name="Test if the posts you shared appear in your News Feed">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1074]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Share a post</p>
+
+<p>Expected result: New post displays on your timeline</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241521" name="Test if your privacy changes on a post">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1076]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Post something</p>
+
+<p>2. Change privacy</p>
+
+<p>Expected results: Privacy will be changed accordingly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241523" name="Test if you receive notifications for reactions to your posts">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1077]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Create a post</p>
+
+<p>2. Have another account react on your post</p>
+
+<p>Expected result: You will receive a notification</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241526" name="Test if you receive notification for comments on your posts">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1078]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Create a post</p>
+
+<p>2. Have another account comment on your post</p>
+
+<p>Expected result: You will receive a notification</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241528" name="Test if you can change your cover photo's privacy">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[1079]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Click on your cover photo</p>
+
+<p>2. Click privacy button</p>
+
+<p>Expected result: Privacy button will work</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241530" name="Smoke Testing Suite: About (section)" >
+<node_order><![CDATA[9]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241535" name="Check if the privacy settings for Studies section are working">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1082]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Go to About tab on your profile</p>
+
+<p>2. Change privacy settings on mentioned section</p>
+
+<p>Expected results: Settings should change accordingly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241537" name="Check if the privacy settings for Current Location are working">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1083]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Go to About tab on your profile</p>
+
+<p>2. Change privacy settings on mentioned section</p>
+
+<p>Expected results: Settings should change accordingly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241540" name="Check if the privacy settings for Birth Location are working">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1084]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Go to About tab on your profile</p>
+
+<p>2. Change privacy settings on mentioned section</p>
+
+<p>Expected results: Settings should change accordingly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241542" name="Check if the privacy settings for Relationship status are working">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1085]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Go to About tab on your profile</p>
+
+<p>2. Change privacy settings on mentioned section</p>
+
+<p>Expected results: Settings should change accordingly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241544" name="Check if the privacy settings for the Phone number are working">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[1086]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>1. Go to About tab on your profile</p>
+
+<p>2. Change privacy settings on mentioned section</p>
+
+<p>Expected results: Settings should change accordingly</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite></testsuite><testsuite id="241289" name="Non-Functional Testing" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="241546" name="UI Test Suite: Photos" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241549" name="Test the UI when you post new pictures">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1088]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241551" name="Test the Album section UI">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1089]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241553" name="Test the UI when you want to add tag to a photo">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1090]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241555" name="Test the UI when you want to remove the tag from photos">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1091]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite><testsuite id="241561" name="UI Test Suite: Videos" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="241562" name="Test the UI when you post a new video">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1093]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241564" name="Test the UI when you tag a new video">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1094]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241566" name="Test the UI when you edit a new video">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1095]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite>
+<testcase internalid="241290" name="Test browser &quot;Go back&quot; button after an unsuccesful log-in">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[999]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Attempt to log-in with incorrect data</p>
+
+<p>2. CLick &quot;Go back&quot; in browser menu</p>
+
+<p>Expected results: You will be redirected to the previous page where your inccorect data is still introduced, so you can easily edit it</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241333" name="Volume test: Spam comment section with data">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[1009]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Steps:</p>
+
+<p>1. Go to a post on News Feed</p>
+
+<p>2. Using a spam application, load the comment section with the message &quot;Hello world!&quot;</p>
+
+<p>Expected result: The meesages will be deleted before being posted and message &quot;You can&#39;t comment at this time&quot; will be received</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241414" name="User Interface Test: How easy it is to access Memories">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[1034]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test if you can easily access Memories section on Facebook by:</p>
+
+<p>News Feed</p>
+
+<p>Search Bar</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+
+<testcase internalid="241440" name="Improvement: Chat">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[1044]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Text message menu should be displayed at&nbsp;the end of message box instead of middle of message box in order&nbsp;to save scrolling.&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+</testcase>
+</testsuite></testsuite>
