@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #13a0ff; /* Light Blue background color */
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <!-- ... (unchanged content) ... -->
+    </form>
+
+</body>
+</html>
+
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mental Health Survey</legend>
+
+            <label for="feelings">How are you feeling today?</label>
+            <textarea id="feelings" name="feelings" rows="4"></textarea>
+
+            <label>Rate your stress level:</label>
+            <select name="stress-level">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label>
+                Have you experienced any of the following in the last month? (Check all that apply)
+            </label>
+            <input type="checkbox" id="anxiety" name="symptoms" value="anxiety">
+            <label for="anxiety">Anxiety</label>
+
+            <input type="checkbox" id="depression" name="symptoms" value="depression">
+            <label for="depression">Depression</label>
+
+            <input type="checkbox" id="insomnia" name="symptoms" value="insomnia">
+            <label for="insomnia">Insomnia</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label>Are you currently seeking professional help for your mental health?</label>
+            <input type="radio" id="yes" name="professional-help" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="professional-help" value="no">
+            <label for="no">No</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
